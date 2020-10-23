@@ -38,9 +38,9 @@ body {
   height: 80%;
 }
 
-.login-form {
-  width: 560px;
-  height: 600px;
+.input-form {
+  width: 620px;
+  height: 620px;
   padding: 20px;
   margin: 9% auto 0;
   background: #84B0D8;
@@ -53,7 +53,7 @@ body {
 .label {
   text-align: left;
   margin-bottom: 0px;
-  padding-left: 50px;
+  padding-left: 80px;
   margin-top: 0.5rem;
 }
 
@@ -89,4 +89,20 @@ body {
 
   font-size: 24px;
   color: #454444;
+}
+
+#signup.input-form {
+  padding-top: 5px;
+}
+
+#signup .logo-img {
+  height: 100px;
+}
+
+#signup .input-box {
+  height: 50px;
+}
+
+#signup .space-top {
+  margin-top: 1rem;
 }
