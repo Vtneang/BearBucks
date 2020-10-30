@@ -98,5 +98,21 @@ html * {
   font-size: 28px;
 }
 
+.team-container {
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.team-container img {
+  height: 300px;
+  width: 300px;
+  padding: 0px;
+  border-radius: 10%;
+  margin: 10px
+}
+
 
 /*  CONTACT PAGE STYLES  */
