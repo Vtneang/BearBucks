@@ -3,4 +3,12 @@
 	height: 300px;
 	border-radius: 50%;
 	background-color: #FF9AA2;
+	display: flex;
+}
+
+.chart {
+	width: 550px;
+	height: 350px;
+	display: flex;
+	align-items: center;
 }

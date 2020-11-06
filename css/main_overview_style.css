@@ -49,5 +49,13 @@
 #pi {
 	margin-left: 60px;
 	position: relative;
-	top: 225px;
+	top: 200px;
+}
+
+#sheet {
+	width: 600px;
+	height: 1000px;
+	margin-left: auto;
+	position: relative;
+	top: -300px;
 }
