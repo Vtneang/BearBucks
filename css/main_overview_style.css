@@ -1,0 +1,53 @@
+
+/* [EM TO PX] used a calculator that converted px to em (default of 16px)*/
+
+#header {		
+	position: relative;
+	text-align: center;
+	margin: auto;
+	padding: 16px;
+}
+#head {
+	font-size: 35px;
+	color: #454444;
+	font-weight: bold;
+}
+
+.objectives {
+	height: 160px;
+	width: 560px;
+	padding: 20px;
+}
+
+#obj {
+	margin: auto;
+	position: relative;
+	left: -305px;
+	top: 20px;
+}
+
+.objectives h2 {
+	padding-left: 16px;
+	color: #000000;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.overview {
+	background-color:  #E5E5E5;
+	padding: 16px;
+	border-radius: 32px;
+}
+
+.overview li {
+	margin: 16px;
+	font-size: 20px;
+	color: #000000;
+	font-weight: normal;
+}
+
+#pi {
+	margin-left: 60px;
+	position: relative;
+	top: 225px;
+}

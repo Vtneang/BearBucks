@@ -1,24 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="main_overview_style.css">
-	<title> BearBucks!!! </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index_styles.css">
+  <link rel="stylesheet" href="css/main_overview_style.css">
+  <link rel="stylesheet" href="css/chart_styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <link href="images/bearbucks_bear.png" rel="icon" type="image/x-icon" />
+  <title>BearBucks</title>
 </head>
 <body>
 	<script type="main_body_javascript.js"></script>
-	<div id = header>
-		<h1 id="head"> Main Overview </h1>
-	</div>
+	<!-- Top of page menu stuff -->
+    <div class="nav-bar">
+    	<a href="index.html">
+      		<img src="/images/bearbucks_logo.png" alt="BearBucks Logo">
+    	</a>
+    	<a href="about.html">
+     		 <p class="semi-bold nav-label">About</p>
+    	</a>
+    	<a href="contact.html">
+      		<p class="semi-bold nav-label">Contact</p>
+    	</a>
+    	<div id = header>
+			<h1 id="head" class="bold"> Main Overview </h1>
+		</div>
+    	<div class="access-buttons">
+      		<a href="signup.html" class="">
+        		<div class="access-btn">
+          			<p class="x-bold">Sign Up</p>
+        		</div>
+      		</a>
+      		<a href="login.html" class="">
+        		<div class="access-btn">
+          			<p class="x-bold">Login</p>
+        		</div></a>
+    	</div>
+  	</div>
 
-	<div id = objectives> 
-		<h2> Weekly Overviews: </h2>
-		<div id = overview>
+  	<!-- Actual page start -->
+	<div class = "objectives" id="obj"> 
+		<h2 class="semi-bold"> Weekly Overviews: </h2>
+		<div class = overview>
 			<ul>
-				<li> Task 1</li>
-				<li> Task 2</li>
-				<li> Task 3</li>
-			<li> Task 4</li>
+				<li class="regular"> Task 1</li>
+				<li class="regular"> Task 2</li>
+				<li class="regular"> Task 3</li>
+				<li class="regular"> Task 4</li>
 			</ul>
+		</div>
+	</div>
+	<div class="objectives" id="pi">
+		<h2 class="semi-bold"> Monthly Breakdown: </h2>
+		<div class="overview">
+			<div class="pie"></div>
 		</div>
 	</div>
 
