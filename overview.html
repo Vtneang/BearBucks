@@ -22,7 +22,7 @@
     	</a>
     	<div class="header">
 			  <a id="head" href="overview.html"> 
-          <p class="regular"> Main Overview </p>
+          <h2 class="regular"> Main Overview </h2>
         </a>
       </div>
       <div class="search_container">
@@ -30,11 +30,13 @@
       </div>
   	</div>
 
+  	<!-- The Rest of the page split into two columns -->
+
 	<div class="row">
 		<div class="column">
 			<div class="left">
 				<div class="content">
-					<h2 class="semi-bold"> Weekly Overview: </h2>
+					<h5 class="semi-bold"> Weekly Overview: </h5>
 				</div>
 			</div>
 			<div class="left"> 
@@ -50,7 +52,7 @@
 			</div>
 			<div class="left">
 				<div class="content">
-					<h2 class="semi-bold"> Monthly Breakdown: </h2>
+					<h5 class="semi-bold"> Monthly Breakdown: </h5>
 				</div>
 			</div>
 			<div class="left">
@@ -70,33 +72,83 @@
 		<div class="column">
 			<div class="right">
 				<div class="content">
-					<h2 class="semi-bold"> Spending Breakdown: </h2>
+					<h5 class="semi-bold"> Spending Breakdown: </h5>
 				</div>			
 			</div>
 			<div class="right">
 				<div class="container">
-					<ul>
-						<li class="regular"> This will be done </li>
-						<li class="regular"> Eventually... </li>
-						<li class="regular"> Task 1 </li>
-						<li class="regular"> Task 1 </li>
-						<li class="regular"> Task 1 </li>
-						<li class="regular"> This will be done </li>
-						<li class="regular"> Eventually... </li>
-						<li class="regular"> Task 1 </li>
-						<li class="regular"> Task 1 </li>
-						<li class="regular"> Task 1 </li>
-					</ul>
+					<table class="spending_log">
+						<tr>
+							<th class="bold" class="name"> Name: </th>
+							<th class="bold"> Amount: </th>
+							<th class="bold"> Category: </th>
+							<th class="bold"> Date: </th>
+						</tr>
+						<tr>
+							<td> Bacon </td>
+							<td> $12.99 </td>
+							<td> Food </td>
+							<td> 11/07/2020 </td>
+						</tr>
+						<tr>
+							<td> Eggs </td>
+							<td> $9.99 </td>
+							<td> Food </td>
+							<td> 11/07/2020 </td>
+						</tr>
+						<tr>
+							<td> Bread </td>
+							<td> $8.99 </td>
+							<td> Food </td>
+							<td> 11/07/2020 </td>
+						</tr>
+						<tr>
+							<td> Water </td>
+							<td> $999.99 </td>
+							<td> Food </td>
+							<td> 11/07/2020 </td>
+						</tr>
+						<tr>
+							<td> Toliet Paper </td>
+							<td> $100,000,000.00 </td>
+							<td> Esstentials </td>
+							<td> 11/07/2020 </td>
+						</tr>
+			            <tr>
+			              <td> ... </td>
+			              <td> ... </td>
+			              <td> ... </td>
+			              <td> ... </td>
+			            </tr>
+			            <tr>
+			              <td> ... </td>
+			              <td> ... </td>
+			              <td> ... </td>
+			              <td> ... </td>
+			            </tr>   
+			            <tr>
+			              <td> ... </td>
+			              <td> ... </td>
+			              <td> ... </td>
+			              <td> ... </td>
+			            </tr>   
+			            <tr>
+			              <td> ... </td>
+			              <td> ... </td>
+			              <td> ... </td>
+			              <td> ... </td>
+			            </tr>    												
+					</table>
 				</div>				
 			</div>
 			<div class="right">
-				<div class="trans_buttons_area">
-					<div class="trans_button">
+				<div class="transaction_buttons_area">
+					<div class="transaction_button">
 						<a href="input.html">
 							<p class="semi-bold"> Input Transaction </p>
 						</a>
 					</div>
-					<div class="trans_button">
+					<div class="transaction_button">
 						<a href="edit.html">
 							<p class="semi-bold"> Edit Transaction </p>
 						</a>
