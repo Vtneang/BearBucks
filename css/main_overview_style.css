@@ -1,28 +1,35 @@
 
 /* [EM TO PX] used a calculator that converted px to em (default of 16px)*/
 
-#header {		
-	position: relative;
-	text-align: center;
+.header {
 	margin: auto;
-	padding: 16px;
 }
+
 #head {
 	font-size: 35px;
 	color: #454444;
 	font-weight: bold;
+	margin: auto;
 }
+
+.search_container {
+	width: 225px;
+	height: 50px;
+	background-color: white;
+	margin-right: 10px;
+}
+
 
 .objectives {
 	height: 160px;
-	width: 560px;
+	width: 600px;
 	padding: 20px;
 }
 
 #obj {
 	margin: auto;
 	position: relative;
-	left: -305px;
+	left: -315px;
 	top: 20px;
 }
 
@@ -47,7 +54,7 @@
 }
 
 #pi {
-	margin-left: 60px;
+	margin-left: 25px;
 	position: relative;
 	top: 200px;
 }
@@ -58,4 +65,26 @@
 	margin-left: auto;
 	position: relative;
 	top: -300px;
+	left: -20px;
+}
+
+#transaction_access {
+	display: flex;
+	justify-content: center;
+	height: 100px;
+}
+
+.transaction_buttons {
+	background-color: #84B0D8;
+	width: 225px;
+	height: 45px;
+	margin: 50px;
+	padding: 10px;
+	border-radius: 15%;
+	display: flex;
+	justify-content: center;
+}
+
+.transaction_buttons p {
+	color: #454444;
 }
