@@ -44,10 +44,8 @@
 	display: flex;
 	background-color: #E5E5E5;
 	border-radius: 6%;
-	padding: 10px;
+	padding: 15px;
 	width: 90%;
-	min-height: 100px;
-	max-height: 500px;
 	margin: auto;
 }
 
@@ -75,7 +73,7 @@
 
 .transaction_buttons_area {
 	margin: auto;
-	width: 90%;
+	width: 100%;
 	padding: 50px;
 	padding-left: 15%;
 	padding-right: 15%; 
@@ -83,6 +81,15 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.submit_area {
+	margin: auto;
+	width: 100%;
+	padding: 50px;
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
 }
 
 .transaction_button {
@@ -104,7 +111,7 @@
 td, th {
 	border: 1px solid black;
 	border-collapse: collapse;
-	padding: 5px;
+	padding: 10px;
 	text-align: center;
 }
 
@@ -119,6 +126,25 @@ td, th {
 	clear: both;
 }
 
+input[type="text"], select, textarea {
+	background-color: #E5E5E5;
+	min-width: 45%;
+	width: 90%;
+	margin: 10px;
+	padding: 15px;
+	border-radius: 25px;
+	border: 2px solid white;
+	resize: vertical;
+}
+
+#Delete {
+	background-color: red;
+}
+
+.split-input {
+	width: 90%;
+	display: flex;
+}
 
 @media all and (max-width: 1000px) {
 	.column {
