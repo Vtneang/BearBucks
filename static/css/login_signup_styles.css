@@ -31,7 +31,7 @@ body, html {
 }
 
 body {
-  background-image: url('/images/login_bg.jpg');
+  background-image: "{{ url_for('static', filename= 'images/login_bg.jpg') }}";
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

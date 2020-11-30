@@ -29,6 +29,8 @@ html * {
 /*  NAV BAR STYLES  */
 
 .nav-bar {
+  width: 100%;
+  margin: auto;
   background: #84B0D8;
   height: 80px;
   display: flex;
@@ -83,7 +85,7 @@ html * {
 /*  ABOUT PAGE STYLES  */
 
 .about-container {
-  width: 1000px;
+  width: 85%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -116,3 +118,12 @@ html * {
 
 
 /*  CONTACT PAGE STYLES  */
+
+
+/* ACCOUNT OVERVIEW STYLES */
+
+.account_info {
+  width: 85%;
+  background-color:  #454444;
+  border-radius: 6%;
+}
