@@ -1,49 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/index_styles.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename= 'css/index_styles.css') }}">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  <link href="images/bearbucks_bear.png" rel="icon" type="image/x-icon" />
-  <title>BearBucks | Contact</title>
+  <link href="{{ url_for('static', filename= 'images/bearbucks_bear.png') }}" rel="icon" type="image/x-icon" />
+  <title>BearBucks | Log Out</title>
 </head>
-
 <body>
 
-<!-- NAV BAR -->
+	<!-- NAV BAR -->
   <div class="nav-bar">
-    <a href="index.html">
-      <img src="images/bearbucks_logo.png" alt="BearBucks Logo">
+    <a href="{{ url_for('index')}}">
+      <img src="{{ url_for('static', filename= 'images/bearbucks_logo.png') }}" alt="BearBucks Logo">
     </a>
-    <a href="about.html">
+    <a href="{{ url_for('about')}}">
       <p class="semi-bold nav-label">About</p>
     </a>
-    <a href="contact.html">
+    <a href="{{ url_for('contactus')}}">
       <p class="semi-bold nav-label">Contact</p>
     </a>
     <div class="access-buttons">
-      <a href="signup.html" class="">
+      <a href="{{ url_for('signup')}}" class="">
         <div class="access-btn">
           <p class="x-bold">Sign Up</p>
         </div>
       </a>
-      <a href="login.html" class="">
+      <a href="{{ url_for('login')}}" class="">
         <div class="access-btn">
           <p class="x-bold">Login</p>
         </div></a>
     </div>
   </div>
 
-
-
+  <div class="about-container">
+    <br><br>
+    	<h2 class="bold">{{User}} has been logged out</h2>
+   	<br><br>
+   		<h4 class="semi-bold"> To go back to the home page click the button below: </h4>
+	   	<a href="{{url_for('index')}}">
+	   		<div class="access-btn">
+	   			<p class="regular"> Home </p>
+	   		</div>
+	   	</a>
+  </div>
 </body>
-
-
-
 </html>

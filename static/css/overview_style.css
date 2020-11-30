@@ -4,12 +4,15 @@
 
 .header {
 	margin: auto;
+	display: flex;
 }
 
 #head {
 	color: #454444;
 	font-weight: bold;
 	margin: auto;
+	display: flex;
+	justify-content: center;
 }
 
 .search_container {
@@ -24,6 +27,7 @@
 	float: left;
 	width: 50%;
 	padding-top: 10px;
+	text-align: center;
 }
 
 .left {
@@ -44,7 +48,7 @@
 	display: flex;
 	background-color: #E5E5E5;
 	border-radius: 6%;
-	padding: 15px;
+	padding: 10px;
 	width: 90%;
 	margin: auto;
 }
@@ -119,11 +123,12 @@ td, th {
 	width: 100%;
 }
 
-
-.row:after {
+.row {
+	width:100%;
 	content: "";
 	display: table;
 	clear: both;
+	align-items: center;
 }
 
 input[type="text"], select, textarea {

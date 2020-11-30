@@ -5,29 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/index_styles.css">
-  <link rel="stylesheet" href="css/overview_style.css">
-  <link rel="stylesheet" href="css/chart_styles.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename= 'css/index_styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename= 'css/overview_style.css') }}">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  <link href="images/bearbucks_bear.png" rel="icon" type="image/x-icon" />
+  <link href="{{ url_for('static', filename= 'images/bearbucks_bear.png') }}" rel="icon" type="image/x-icon" />
 	<title> BearBucks </title>
 </head>
 <body>
 	<!-- Top of page menu stuff -->
     <div class="nav-bar">
-    	<a href="index.html">
-      		<img src="images/bearbucks_logo.png" alt="BearBucks Logo">
+    	<a href="{{ url_for('overview', cur_user=User)}}">
+      		<img src="{{ url_for('static', filename= 'images/bearbucks_logo.png') }}" alt="BearBucks Logo">
     	</a>
     	<div class="header">
-			  <a id="head" href="edit.html"> 
+			  <a id="head" href="{{ url_for('edit', cur_user=User)}}"> 
           <h2 class="regular"> Edit Transactions </h2>
         </a>
       </div>
-      <div class="search_container">
-        <h5> Search bar incoming </h5>
-      </div>
+      <a href="{{ url_for('account', cur_user=User)}}">
+        <p class="semi-bold nav-label">Account</p>
+      </a>
+      <a href="{{ url_for('logout', cur_user=User)}}">
+        <p class="semi-bold nav-label">Log out</p>
+      </a>
   	</div>
 
     <!-- The Rest of the page split into two -->
@@ -108,15 +110,10 @@
       <div class="left">
         <div class="transaction_buttons_area">
           <div class="transaction_button">
-            <a href="input.html">
+            <a href="{{ url_for('input', cur_user=User)}}">
               <p class="semi-bold"> Input Transaction </p>
             </a>
           </div>
-<!--           <div class="transaction_button">
-            <a href="edit.html">
-              <p class="semi-bold"> Edit Transaction </p>
-            </a>
-          </div> -->
         </div>
       </div>
     </div>
@@ -166,12 +163,12 @@
         <div class="right">
           <div class="submit_area">
             <div class="transaction_button" id="Delete">
-                <a href="overview.html">
+                <a href="{{ url_for('overview', cur_user=User)}}">
                 <p class="semi-bold"> Delete </p>
-                <a href="overview.html">
+                </a>
             </div>
             <div class="transaction_button">
-              <a href="overview.html">
+              <a href="{{ url_for('overview', cur_user=User)}}">
               <p class="semi-bold"> Save Changes </p>
               </a>
             </div>
@@ -179,6 +176,10 @@
         </div>
       </div>
     </div>
+
+  <!-- JavaScript Files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 </body>
 </html>

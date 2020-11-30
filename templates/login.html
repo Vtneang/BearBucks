@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/login_signup_styles.css') }}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="{{ url_for('static', filename= 'images/bearbucks_bear.png') }}" rel="icon" type="image/x-icon" />
+  <title>BearBucks | Login</title>
+</head>
+
+<body>
+  <div id="login" class="input-form">
+    <form id="login-form" method="post">
+    <br>
+    <a href="{{ url_for('index')}}">
+      <img class="logo-img" src="{{ url_for('static', filename= 'images/bearbucks_logo.png') }}" alt="BearBucks Logo">
+    </a>
+    <p class="x-light label space-top">Username/Email</p>
+    <input name="user" class="input-box" id="login-email">
+    <p class="x-light label space-top">Password</p>
+    <input type="password" name="password" class="input-box" id="login-password">
+    <p class="x-light label">
+      <span><input type="checkbox"></span>
+      Remember Me
+    </p>
+    <input type="submit" class="login-btn x-light space-top" id ="login_button" value="LOG IN">
+    </form>
+  </div>
+
+  <!-- JavaScript Files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>

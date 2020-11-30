@@ -1,0 +1,30 @@
+{
+"userdata": {
+"Bobo123": {
+"Name": "Ricardo",
+"Email": "bob@gmail.com",
+"Username": "Bobo123",
+"Password": "flask",
+"Transactions": {}
+},
+"Vtneang": {
+"Name": "Vincent",
+"Email": "vtneang@gmail.com",
+"Username": "Vtneang",
+"Password": "Vincent",
+"Transactions": {}
+},
+"admin": {
+"Name": "Creators",
+"Email": "bearbucks@calhacks.io",
+"Username": "admin",
+"Password": "bearbucks",
+"Transactions": {}
+}
+},
+"emails": {
+"bob@gmail.com": "Bobo123",
+"vtneang@gmail.com": "Vtneang",
+"bearbucks@calhacks.io": "admin"
+}
+}
