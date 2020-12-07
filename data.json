@@ -5,26 +5,41 @@
 "Email": "bob@gmail.com",
 "Username": "Bobo123",
 "Password": "flask",
-"Transactions": {}
+"Transactions": [
+{
+"Name": "Bacon",
+"Amount": "12.99",
+"Category": "Food",
+"Date": "11/03/2020"
+}
+]
 },
 "Vtneang": {
 "Name": "Vincent",
 "Email": "vtneang@gmail.com",
 "Username": "Vtneang",
 "Password": "Vincent",
-"Transactions": {}
+"Transactions": []
 },
 "admin": {
 "Name": "Creators",
 "Email": "bearbucks@calhacks.io",
 "Username": "admin",
 "Password": "bearbucks",
-"Transactions": {}
+"Transactions": []
+},
+"Demo_person": {
+"Name": "Demo",
+"Email": "Demo@gmail.com",
+"Username": "Demo_person",
+"Password": "Apple209",
+"Transactions": []
 }
 },
 "emails": {
 "bob@gmail.com": "Bobo123",
 "vtneang@gmail.com": "Vtneang",
-"bearbucks@calhacks.io": "admin"
+"bearbucks@calhacks.io": "admin",
+"Demo@gmail.com": "Demo_person"
 }
 }
