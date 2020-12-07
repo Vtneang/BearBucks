@@ -41,6 +41,7 @@ html * {
   height: 70px;
   padding-left: 20px;
   padding-right: 30px;
+  padding-bottom: 0px;
 }
 
 .nav-bar a:hover, a:visited, a:link, a:active {
@@ -105,20 +106,32 @@ html * {
   margin: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .team-container img {
-  height: 300px;
-  width: 300px;
-  padding: 0px;
-  border-radius: 10%;
+  height: 250px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 50%;
   margin: 10px
 }
 
+.photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-/*  CONTACT PAGE STYLES  */
-
+/* INPUT/EDIT */
+#submit {
+  background: #84B0D8;
+  outline: none;
+  border: 0px;
+  width: 150px;
+  height: 35px;
+  border-radius: 10px;
+}
 
 /* ACCOUNT OVERVIEW STYLES */
 

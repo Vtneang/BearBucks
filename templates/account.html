@@ -14,19 +14,22 @@
 
 <body>
 	<!-- NAV BAR -->
-  <div class="nav-bar">
-    <a href="{{ url_for('overview', cur_user=User)}}">
-      <img src="{{ url_for('static', filename= 'images/bearbucks_logo.png') }}" alt="BearBucks Logo">
-    </a>
-    <div class="header">
-    	<a id="head" href="{{url_for('account', cur_user=User)}}">
-    		<h2 class="regular"> Account Overview</h2>
-    	</a>
-    </div>
-    <div class="access-buttons">
-      <a href="{{ url_for('logout', cur_user=User)}}" class="">
-          <p class="semi-bold nav-label">Log Out</p>
-    	</a>
+
+    <div class="nav-bar">
+      <a href="{{ url_for('overview', cur_user=User)}}">
+          <img src="{{ url_for('static', filename= 'images/bearbucks_logo.png') }}" alt="BearBucks Logo">
+      </a>
+      <div class="header">
+        <a id="head" href="{{ url_for('account', cur_user=User)}}"> 
+          <h2 class="regular"> Account Overview </h2>
+        </a>
+      </div>
+    <a href="{{ url_for('account', cur_user=User)}}">
+        <p class="semi-bold nav-label" id="user">{{User}}</p>
+      </a>
+      <a href="{{ url_for('logout', cur_user=User)}}">
+        <p class="semi-bold nav-label">Log out</p>
+      </a>
     </div>
 
   </div>
@@ -45,7 +48,7 @@
   			</div>
   			<br>
   			<div class="content">
-  				<h3 class="semi-bold left-side"> Userame: </h3>
+  				<h3 class="semi-bold left-side"> Username: </h3>
   			</div>
   			<div class="container">
   				<h5> {{User}} </h5>
@@ -61,13 +64,41 @@
   		</div>
   	</div>
   	<div class="column">
-  		
+  		<div class="right">
+        <div class="content">
+          <h5 class="semi-bold"> Spending Breakdown: </h5>
+        </div>      
+      </div>
+      <div class="right">
+        <div class="container">
+          <table class="spending_log">                          
+          </table>
+        </div>        
+      </div>
+      <div class="right">
+        <div class="transaction_buttons_area">
+          <div class="transaction_button">
+            <a href="{{url_for('input', cur_user=User)}}">
+              <p class="semi-bold"> Input Transaction </p>
+            </a>
+          </div>
+          <div class="transaction_button">
+            <a href="{{ url_for('edit', cur_user=User)}}">
+              <p class="semi-bold"> Edit Transaction </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   	</div>
   </div>
+
+  <div id="data" style="display: none">{{data}}</div>
 
     <!-- JavaScript Files -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script type="text/javascript", src="{{ url_for('static', filename= 'javascript/account.js') }}"></script>
 
 </body>
 

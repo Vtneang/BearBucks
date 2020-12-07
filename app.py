@@ -15,7 +15,7 @@ def account(cur_user):
 	data = json.load(file)["userdata"][cur_user]
 	name = data["Name"]
 	email = data["Email"]
-	return render_template('account.html', User=cur_user, Name=name, Email=email)
+	return render_template('account.html', User=cur_user, Name=name, Email=email, data=data["Transactions"])
 
 @app.route('/<cur_user>/logout')
 def logout(cur_user):
@@ -23,7 +23,9 @@ def logout(cur_user):
 
 @app.route('/<cur_user>/overview')
 def overview(cur_user):
-	return render_template('overview.html', User=cur_user)
+	file = open('data.json')
+	data = json.load(file)
+	return render_template('overview.html', User=cur_user, data=data["userdata"][cur_user]["Transactions"])
 
 @app.route('/login', methods = ["GET", "POST"])
 def login():
@@ -67,7 +69,7 @@ def signup():
 			# Throw an error or something
 			return redirect(request.url)
 		data["emails"][new_email] = new_user
-		data["userdata"][new_user] = {"Name": new_name, "Email": new_email, "Username": new_user, "Password": new_pass, "Transactions":{}}
+		data["userdata"][new_user] = {"Name": new_name, "Email": new_email, "Username": new_user, "Password": new_pass, "Transactions":[]}
 		file.close()
 		new_file = open("data.json", "w")
 		json.dump(data, new_file, indent="")
@@ -86,17 +88,15 @@ def contactus():
 
 @app.route('/<cur_user>/edit')
 def edit(cur_user):
-	print(cur_user)
-	return render_template('edit.html', User=cur_user)
+	file = open('data.json')
+	data = json.load(file)
+	return render_template('edit.html', User=cur_user, data=data["userdata"][cur_user]["Transactions"])
 
-@app.route('/<cur_user>/input')
+@app.route('/<cur_user>/input', methods = ["GET", "POST"])
 def input(cur_user):
-	print(cur_user)
-	return render_template('input.html', User=cur_user)
-
-
-
-
+	file = open('data.json')
+	data = json.load(file)
+	return render_template('input.html', User=cur_user, data=data["userdata"][cur_user]["Transactions"])
 
 
 if __name__ == '__main__':
